@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Антон Меднов](https://up.htmlacademy.ru/adaptive/9/user/200889).
-* Наставник: `Неизвестно`.
+* Студент: [Антон Меднов] (https://up.htmlacademy.ru/adaptive/9/user/200889).
+* Наставник: [Никита Рогатнев] (https://htmlacademy.ru/profile/id86119).
 
 ---
 
