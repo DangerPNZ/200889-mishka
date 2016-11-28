@@ -51,34 +51,24 @@
       <h2>Вязаные корзинки</h2>
       <span class="best-product__flag">Товар недели</span>
       <p>Экологически чистая пряжаб ручная работаю Доступны в шести расцветках, и трёх размерах.</p>
-      <div class="best-product__descript-item">
-        <span class="descript-item__value">Цвет:</span>
-        <span class="descript-item__parameter">"Тиффани"/серый</span>
-      </div>
-      <div class="best-product__descript-item">
-        <span class="descript-item__value">Диаметр:</span>
-        <span class="descript-item__parameter">25см</span>
-      </div>
-      <div class="best-product__descript-item">
-        <span class="descript-item__value">Высота:</span>
-        <span class="descript-item__parameter">15см</span>
-      </div>
-      <img src="" weight="" height="" alt="">
-      <span class="best-product__price">Цена: 990 руб.</span>
-      <a href="#" class="btn">Заказать</a>
+      <table class="best-product__descript-item">
+        <tr>
+          <td class="descript-item__value">Цвет:</td>
+          <td class="descript-item__parameter">"Тиффани"/серый</td>
+        </tr>
+        <tr class="best-product__descript-item">
+          <td class="descript-item__value">Диаметр:</td>
+          <td class="descript-item__parameter">25см</td>
+        </tr>
+        <tr class="best-product__descript-item">
+          <td class="descript-item__value">Высота:</td>
+          <td class="descript-item__parameter">15см</td>
+        </tr>
+        <img src="" weight="" height="" alt="">
+        <span class="best-product__price">Цена: 990 руб.</span>
+        <a href="#" class="btn">Заказать</a>
+      </table>
     </div>
-    <section class="modal-add">
-      <div class="modal-add__container">
-        <h2 class="modal-add__title">Добавить в корзину</h2>
-        <span class="modal-add__select-descript">Выберете размер:</span>
-        <div class="modal-add__size-variation">
-          <span class="modal-add__size">S</span>
-          <span class="modal-add__size">M</span>
-          <span class="modal-add__size">L</span>
-        </div>
-        <a href="#" class="btn">Добавить</a>
-      </div>
-    </section>
   </article>
   <section class="about-us">
     <div class="about-us__container">
@@ -113,7 +103,7 @@
       </div>
       <div class="contacts__contact-info">
         <span class="contacts__type">адрес:</span>
-        <span class="contacts__data">г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+        <p class="contacts__data">г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
       </div>
       <img src="" width="" height="" alt="">
       <a href="#" class="btn">Напишите нам</a>
@@ -126,9 +116,23 @@
         <a href="#" class="page-footer__social-link"><span class="reader-descript">Фейсбук</span></a>
         <a href="#" class="page-footer__social-link"><span class="reader-descript">Твиттер</span></a>
       </div>
-      <a href="#" class="page-footer__designed-by">Разработано<span class="reader-descript">htmlacademy.ru</span></a>
+      <a href="#" class="page-footer__designed-by">Разработано<a href="#" class="page-footer__designer-link"><span class="reader-descript">htmlacademy.ru</span></a></a>
     </div>
   </footer>
+  <section class="modal-add">
+    <div class="modal-add__container">
+      <form action="#" method="get">
+        <h2 class="modal-add__title">Добавить в корзину</h2>
+        <span class="modal-add__select-descript">Выберете размер:</span>
+        <div class="modal-add__size-variation">
+          <inpyt type="text" class="modal-add__size" name="selected size S" value="S" autofocus readonly>
+            <inpyt type="text" class="modal-add__size" name="selected size M" value="M" readonly>
+              <inpyt type="text" class="modal-add__size" name="selected size L" value="L" readonly>
+        </div>
+        <button type="submit" class="submit-btn">Добавить</button>
+      </form>
+    </div>
+  </section>
 </body>
 
 </html>
