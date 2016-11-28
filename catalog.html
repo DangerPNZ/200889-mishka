@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка каталог</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__container">
+      <div class="page-header__logo">
+        <a class="page-header__logo-link">
+          <img src="" width="" height="" alt="">
+        </a>
+      </div>
+      <a href="#" class="page-header__menu-btn"></a>
+      <nav class="page-header__main-menu">
+        <ul>
+          <li class="page-header__menu-item">
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li class="page-header__menu-item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+          <li class="page-header__menu-item">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="page-header__menu-item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="catalog">
+    <div class="catalog__container">
+      <h1 class="catalog__title">Каталог товаров</h1>
+      <article class="catalog__product">
+        <a href="#">
+          <img src="" width="" height="" alt="">
+        </a>
+        <div class="catalog__product-descript">
+          <h1 class="catalog__product-title">
+            <a href="#">Зайчик-попрыгайчик</a>
+          </h1>
+          <span class="catalog__product-parameter">Рост 30см, вес 200 г</span>
+          <div class="catalog__product-purchase">
+            <span class="catalog__product-price">1 200 руб.</span>
+            <a href="#" class="catalog__product-add"><span class="reader-descript">Добавить в корзину</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="catalog__product">
+        <a href="#">
+          <img src="" width="" height="" alt="">
+        </a>
+        <div class="catalog__product-descript">
+          <h1 class="catalog__product-title">
+            <a href="#">Корзинка для белья</a>
+          </h1>
+          <span class="catalog__product-parameter">Диаметр 15 см, высота 10 см</span>
+          <div class="catalog__product-purchase">
+            <span class="catalog__product-price">690 руб.</span>
+            <a href="#" class="catalog__product-add"><span class="reader-descript">Добавить в корзину</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="catalog__product">
+        <a href="#">
+          <img src="" width="" height="" alt="">
+        </a>
+        <div class="catalog__product-descript">
+          <h1 class="catalog__product-title">
+            <a href="#">Большая корзинка для игрушек</a>
+          </h1>
+          <span class="catalog__product-parameter">Диаметр 30см, высота 30 см</span>
+          <div class="catalog__product-purchase">
+            <span class="catalog__product-price">1 500 руб.</span>
+            <a href="#" class="catalog__product-add"><span class="reader-descript">Добавить в корзину</span></a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  <section class="manufacturing-process">
+    <div class="manufacturing-process__container">
+      <h2 class="manufacturing-process__title">Процесс производства</h2>
+      <!-- Для размещения видео
+      <video width="" height="" src="" poster="">
+        <source src=".mp4" type="video/mp4">
+        <source src=".ogv" type="video/ogg">
+        <source src=".webm" type="video/webm">
+      </video>
+    -->
+      <img src="" width="" height="" alt="Процесс производства нашей продукции">
+      <p class="manufacturing-process__descript">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a href="#" class="btn">Сделать заказ</a>
+    </div>
+  </section>
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="page-footer__social">
+        <a href="#" class="page-footer__social-link"><span class="reader-descript">Инстаграм</span></a>
+        <a href="#" class="page-footer__social-link"><span class="reader-descript">Фейсбук</span></a>
+        <a href="#" class="page-footer__social-link"><span class="reader-descript">Твиттер</span></a>
+      </div>
+      <a href="#" class="page-footer__designed-by">Разработано<a href="#" class="page-footer__designer-link"><span class="reader-descript">htmlacademy.ru</span></a></a>
+    </div>
+  </footer>
+  <section class="modal-add">
+    <div class="modal-add__container">
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <h2 class="modal-add__title">Добавить в корзину</h2>
+        <span class="modal-add__select-descript">Выберете размер:</span>
+        <div class="modal-add__size-variation">
+          <input type="text" class="modal-add__size" name="selected size S" value="S" autofocus readonly>
+          <input type="text" class="modal-add__size" name="selected size M" value="M" readonly>
+          <input type="text" class="modal-add__size" name="selected size L" value="L" readonly>
+        </div>
+        <button type="submit" class="submit-btn">Добавить</button>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>
