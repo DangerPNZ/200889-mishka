@@ -3,6 +3,7 @@
 }
 .page-header__container {
   margin: 0 auto;
+  width: 320px;
 }
 .page-header__logo {}
 .page-header__logo-link {
@@ -13,5 +14,18 @@
   ul {
      a {
     }
+  }
+}
+.page-header__delivery {
+  display: none;
+}
+@media @tablet {
+  .page-header__container {
+    width: 768px;
+  }
+}
+@media @desktop {
+  .page-header__container {
+    width: 1150px;
   }
 }

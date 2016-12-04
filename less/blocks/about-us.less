@@ -2,13 +2,53 @@
   width: 100%;
 }
 .about-us__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin: 0 auto;
+  padding: 0 30px;
 }
-.about-us__title {}
-.about-us__item {}
+.about-us__title {
+  width: 100%;
+  .OpenSans-Bold;
+  font-size: 25px;
+  line-height: 30px;
+}
+.about-us__item {
+  width: 260px;
+  .OpenSans-Bold;
+  font-size: 17px;
+}
 .about-us__item--materials {}
 .about-us__item--style {}
 .about-us__item--like {}
 .about-us__item--handmade {}
 .about-us__item--patriotism {}
 .about-us__item--package {}
+@media @tablet {
+  .about-us__container {
+    width: 768px;
+    padding: 0 50px;
+  }
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .about-us__item {
+    width: 334px;
+    font-size: 20px;
+  }
+}
+@media @desktop {
+  .about-us__container {
+    width: 1150px;
+    padding: 0 225px;
+  }
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .about-us__item {
+    width: 350px;
+  }
+}

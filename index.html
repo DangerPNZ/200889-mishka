@@ -19,10 +19,10 @@
       <nav class="page-header__main-menu">
         <ul>
           <li class="page-header__menu-item">
-            <a href="#">Каталог товаров</a>
+            <a href="catalog.html">Каталог товаров</a>
           </li>
           <li class="page-header__menu-item">
-            <a href="#">Вязание на заказ</a>
+            <a href="form.html">Вязание на заказ</a>
           </li>
           <li class="page-header__menu-item">
             <a href="#">Поиск по сайту</a>
@@ -32,6 +32,7 @@
           </li>
         </ul>
       </nav>
+      <span class="page-header__delivery">Бесплатная доставка по России</span>
     </div>
   </header>
   <section class="wares">
@@ -49,9 +50,11 @@
   </section>
   <article class="best-product">
     <div class="best-product__container">
-      <h2 class="best-product__title">Вязаные корзинки</h2>
-      <span class="best-product__flag">Товар недели</span>
-      <p>Экологически чистая пряжаб ручная работаю Доступны в шести расцветках, и трёх размерах.</p>
+      <div class="best-product__header">
+        <h2 class="best-product__title">Вязаные корзинки</h2>
+        <span class="best-product__flag">Товар недели</span>
+      </div>
+      <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
       <table class="best-product__descript-items">
         <tr>
           <td class="best-product__descript-value">Цвет:</td>
@@ -86,8 +89,10 @@
     <div class="reviews__container">
       <h2 class="reviews__title">Отзывы</h2>
       <p class="reviews__note">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-      <span class="reviews__author">Анастасия Красильникова</span>
-      <a href="#" class="reviews__author-mail">@misssssiskras</a>
+      <div class="reviews__author-info">
+        <span class="reviews__author">Анастасия Красильникова</span>
+        <a href="#" class="reviews__author-mail">@misssssiskras</a>
+      </div>
       <div class="reviews__leaf">
         <a href="#" class="reviews__leaf-arrow reviews__leaf-arrow--back"><span class="reader-descript">Назад</span></a>
         <a href="#" class="reviews__leaf-arrow reviews__leaf-arrow--next"><span class="reader-descript">Вперёд</span></a>
@@ -98,13 +103,15 @@
   <section class="contacts">
     <div class="contacts__container">
       <h2 class="contacts__title">Контакты</h2>
-      <div class="contacts__contact-info">
-        <span class="contacts__type">e-mail:</span>
-        <a href="mailto:info@mimimishkashop.ru" class="contacts__data">info@mimimishkashop.ru</a>
-      </div>
-      <div class="contacts__contact-info">
-        <span class="contacts__type">адрес:</span>
-        <p class="contacts__data">г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+      <div class="contacts__info">
+        <div class="contacts__info-item">
+          <span class="contacts__type">e-mail:</span>
+          <a href="mailto:info@mimimishkashop.ru" class="contacts__data">info@mimimishkashop.ru</a>
+        </div>
+        <div class="contacts__info-item">
+          <span class="contacts__type">адрес:</span>
+          <p class="contacts__data">г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+        </div>
       </div>
       <img src="" width="" height="" alt="Карта">
       <a href="#" class="link-btn">Напишите нам</a>
@@ -112,6 +119,11 @@
   </section>
   <footer class="page-footer">
     <div class="page-footer__container">
+      <div class="page-footer__logo">
+        <a href="#" class="page-footer__logo-link">
+          <img src="" width="" height="" alt="Логотип">
+        </a>
+      </div>
       <div class="page-footer__social">
         <a href="#" class="page-footer__social-link  page-footer__social-link--instagram"><span class="reader-descript">Инстаграм</span></a>
         <a href="#" class="page-footer__social-link  page-footer__social-link--facebook"><span class="reader-descript">Фейсбук</span></a>
@@ -124,7 +136,7 @@
     <div class="modal-add__container">
       <form action="https://echo.htmlacademy.ru" method="get">
         <h2 class="modal-add__title">Добавить в корзину</h2>
-        <span class="modal-add__select-descript">Выберете размер:</span>
+        <span class="modal-add__select-descript">Выберите размер:</span>
         <div class="modal-add__size-variation">
           <input type="text" class="modal-add__size" name="selected size S" value="S" autofocus readonly>
           <input type="text" class="modal-add__size" name="selected size M" value="M" readonly>

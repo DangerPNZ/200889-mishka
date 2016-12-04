@@ -2,7 +2,15 @@
   width: 100%;
 }
 .page-footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
+}
+.page-footer__logo {
+  .page-footer__logo-link {
+    display: none;
+  }
 }
 .page-footer__social {}
 .page-footer__social-link {}
@@ -10,3 +18,27 @@
 .page-footer__social-link--facebook {}
 .page-footer__social-link--twitter {}
 .page-footer__designed-by {}
+@media @tablet {
+  .page-footer__container {
+    width: 768px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .page-footer__logo {
+    .page-footer__logo-link {
+      display: flex;
+    }
+  }
+}
+@media @desktop {
+    .page-footer__container {
+      width: 1150px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .page-footer__logo {
+      .page-footer__logo-link {
+        display: flex;
+      }
+    }
+}

@@ -2,8 +2,45 @@
   width: 100%;
 }
 .manufacturing-process__container {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 0 29px;
   margin: 0 auto;
+  border: 1px solid @lightgray;
   img {}
 }
-.manufacturing-process__title {}
-.manufacturing-process__descript {}
+.manufacturing-process__title {
+  padding-left: 90px;
+  .OpenSans-Bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+.manufacturing-process__descript {
+  .OpenSans;
+  font-size: 13px;
+  line-height: 24px;
+  color: @graphite;
+}
+@media @tablet {
+  .manufacturing-process__container {
+  width: 768px;
+  padding: 0 50px;
+  img {
+    order: -1;
+  }
+  }
+  .manufacturing-process__title {
+    font-size: 20px;
+  }
+  .manufacturing-process__descript {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+@media @desktop {
+  .manufacturing-process__container {
+    width: 1150px;
+  }
+
+}

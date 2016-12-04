@@ -2,16 +2,111 @@
   width: 100%;
 }
 .catalog__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 320px;
+}
+.catalog__title {
+  .OpenSans-Bold;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  width: 100%;
+  background-color: @bg-gray;
+}
+.catalog__products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
 }
-.catalog__title {}
 .catalog__product {
-  img {}
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  img {
+  }
 }
-.catalog__product-descript {}
+.catalog__product-descript {
+  padding: 0 28px;
+  border-bottom: 1px solid @lightgray;
+}
 .catalog__product-title {
-  a {}
+  .OpenSans-Bold;
+  font-size: 17px;
+  line-height: 24px;
+  a {
+    color: #000;
+  }
 }
-.catalog__product-parameter {}
-.catalog__product-purchase {}
-.catalog__product-price {}
+.catalog__product-parameter {
+  .OpenSans;
+  font-size: 13px;
+  line-height: 30px;
+  color: @graphite;
+}
+.catalog__product-purchase {
+  width: 203px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid @lightgray;
+}
+.catalog__product-price {
+  .OpenSans-Bold;
+  font-size: 15px;
+  line-height: 24px;
+}
+@media @tablet {
+  .catalog__container {
+    width: 768px;
+  }
+  .catalog__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .catalog__products {
+    width: 668px;
+  }
+  .catalog__product {
+    flex-direction: row;
+    img {
+      order: -1;
+    }
+  }
+  .catalog__product-descript {
+    width: 334px;
+    padding-left: 27px;
+  }
+  .catalog__product-title {
+    max-width: 238px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .catalog__product-parameter {
+    font-size: 15px;
+  }
+  .catalog__product-price {
+    font-size: 17px;
+  }
+}
+@media @desktop {
+  .catalog__container {
+    width: 1150px;
+  }
+  .catalog__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .catalog__products {
+    width: 1050px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .catalog__product {
+    width: 315px;
+    flex-direction: column;
+  }
+
+}

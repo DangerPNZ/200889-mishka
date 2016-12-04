@@ -1,9 +1,67 @@
 .contacts {}
 .contacts__container {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
+  padding: 0 30px;
   img {}
 }
-.contacts__title {}
-.contacts__contact-info {}
-.contacts__type {}
-.contacts__mail {}
+.contacts__title {
+  .OpenSans-Bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  .OpenSans;
+  font-size: 15px;
+  line-height: 30px;
+  color: @graphite;
+}
+.contacts__info-item {
+  display: flex;
+  align-items: baseline;
+  width: 334px;
+}
+.contacts__type {
+  width: 78px;
+}
+.contacts__data {
+  max-width: 180px;
+  color: @graphite;
+}
+@media @tablet {
+  .contacts__container {
+    width: 768px;
+    padding: 0 50px;
+    .link-btn {
+      margin: 0 auto;
+    }
+  }
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .contacts__info {
+    flex-direction: row;
+    align-items: baseline;
+    font-size: 17px;
+  }
+}
+@media @desktop {
+  .contacts__container {
+    width: 1150px;
+    padding: 0 50px 0 225px;
+    .link-btn {
+      margin: 0 0;
+    }
+  }
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .contacts__info {
+    flex-direction: column;
+  }
+}
