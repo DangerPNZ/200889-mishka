@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -54,35 +55,51 @@
         <h2 class="best-product__title">Вязаные корзинки</h2>
         <span class="best-product__flag">Товар недели</span>
       </div>
-      <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
-      <table class="best-product__descript-items">
-        <tr>
-          <td class="best-product__descript-value">Цвет:</td>
-          <td class="best-product__descript-parameter">"Тиффани"/серый</td>
-        </tr>
-        <tr class="best-product__descript-items">
-          <td class="best-product__descript-value">Диаметр:</td>
-          <td class="best-product__descript-parameter">25см</td>
-        </tr>
-        <tr class="best-product__descript-items">
-          <td class="best-product__descript-value">Высота:</td>
-          <td class="best-product__descript-parameter">15см</td>
-        </tr>
-      </table>
-      <img src="" weight="" height="" alt="Вязаные корзинки ручной работы">
-      <span class="best-product__price">Цена: 990 руб.</span>
-      <a href="#" class="link-btn">Заказать</a>
+      <div class="best-product__descript">
+        <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="best-product__descript-items">
+          <tr>
+            <td class="best-product__descript-value">Цвет:</td>
+            <td class="best-product__descript-parameter">&laquo;Тиффани&raquo;/серый</td>
+          </tr>
+          <tr>
+            <td class="best-product__descript-value">Диаметр:</td>
+            <td class="best-product__descript-parameter">25 см</td>
+          </tr>
+          <tr>
+            <td class="best-product__descript-value">Высота:</td>
+            <td class="best-product__descript-parameter">15 см</td>
+          </tr>
+        </table>
+        <img src="./img/triple-set-mobile@1x.jpg" weight="260" height="315" alt="Вязаные корзинки ручной работы">
+        <span class="best-product__price">Цена: 990 руб.</span>
+        <a href="#" class="link-btn">Заказать</a>
+      </div>
     </div>
   </article>
   <section class="about-us">
     <div class="about-us__container">
       <h2 class="about-us__title">Коротко о нас:</h2>
-      <span class="about-us__item  about-us__item--materials">Экологически чистые материалы</span>
-      <span class="about-us__item  about-us__item--style">Скандинавский стиль по российской цене</span>
-      <span class="about-us__item  about-us__item--like">Увеличивает лайки на фотографиях</span>
-      <span class="about-us__item  about-us__item--handmade">Связано вручную с любовью и умилением</span>
-      <span class="about-us__item  about-us__item--patriotism">Поддержка отечественного производителя</span>
-      <span class="about-us__item  about-us__item--package">Поставляется в подарочной упаковке</span>
+      <ul class="about-us__items">
+        <li>
+          <span class="about-us__item  about-us__item--materials">Экологически чистые материалы</span>
+        </li>
+        <li>
+          <span class="about-us__item  about-us__item--style">Скандинавский стиль по российской цене</span>
+        </li>
+        <li>
+          <span class="about-us__item  about-us__item--like">Увеличивает лайки на фотографиях</span>
+        </li>
+        <li>
+          <span class="about-us__item  about-us__item--handmade">Связано вручную с любовью и умилением</span>
+        </li>
+        <li>
+          <span class="about-us__item  about-us__item--patriotism">Поддержка отечественного производителя</span>
+        </li>
+        <li>
+          <span class="about-us__item  about-us__item--package">Поставляется в подарочной упаковке</span>
+        </li>
+      </ul>
     </div>
   </section>
   <section class="reviews">
@@ -113,7 +130,7 @@
           <p class="contacts__data">г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
         </div>
       </div>
-      <img src="" width="" height="" alt="Карта">
+      <img src="./img/map-mobile@1x.jpg" width="320" height="457" alt="Карта">
       <a href="#" class="link-btn">Напишите нам</a>
     </div>
   </section>

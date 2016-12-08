@@ -2,9 +2,10 @@
   width: 100%;
 }
 .best-product__container {
+  width: 320px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 auto 35px auto;
   padding: 0 30px;
   p {
     .OpenSans;
@@ -12,6 +13,7 @@
     line-height: 24px;
     color: @graphite;
     max-width: 255px;
+    margin: 24px 0 18px 0;
   }
   img {}
 }
@@ -23,6 +25,7 @@
   .OpenSans-Bold;
   font-size: 25px;
   line-height: 30px;
+  margin: 27px 0 8px 0;
 }
 .best-product__flag {
   .OpenSans-Bold;
@@ -31,22 +34,50 @@
   text-transform: uppercase;
   color: @aqua;
 }
-.best-product__descript-items {}
-.best-product__descript-value {}
+.best-product__descript {
+  display: flex;
+  flex-direction: column;
+}
+.best-product__descript-items {
+  width: 100%;
+  margin-bottom: 28px;
+  .OpenSans;
+  font-size: 15px;
+  line-height: 20px;
+  color: @graphite;
+  border-collapse: collapse;
+  tr {
+    border-bottom: 1px solid @lightgray;
+  }
+}
+.best-product__descript-value {
+  width: 97px;
+  padding: 9px 0 10px 0;
+}
 .best-product__descript-parameter {}
-.best-product__price {}
+.best-product__price {
+  .OpenSans-Bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: @graphite;
+  margin: 25px auto 25px auto;
+}
 
 @media @tablet {
   .best-product__container {
     width: 768px;
     padding: 0 50px;
-    p {
-      font-size: 17px;
-      line-height: 30px;
-      max-width: 300px;
+    position: relative;
+    img {
+      position: absolute;
+      top: 153px;
+      right: 50px;
+      width: 333px;
+      height: 404px;
     }
   }
   .best-product__header {
+    margin: 19px 0 17px 0;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -58,6 +89,26 @@
   }
   .best-product__flag {
     max-width: 130px;
+    text-align: center;
+    padding-top: 26px;
+  }
+  .best-product__descript {
+    width: 290px;
+    p {
+      font-size: 17px;
+      line-height: 30px;
+      max-width: 300px;
+    }
+  }
+  .best-product__descript-items {
+    margin-top: 18px;
+  }
+  .best-product__price {
+    font-size: 20px;
+    margin: 28px auto 34px auto;
+  }
+  .link-btn {
+    width: 100%;
   }
 }
 @media @desktop {
@@ -66,15 +117,23 @@
     padding: 0 50px 0 225px;
   }
   .best-product__header {
+    margin: 98px 0 17px -4px;
     justify-content: flex-start;
     width: 100%;
   }
   .best-product__title {
+    margin-left: 23px;
     font-size: 53px;
     line-height: 57px;
   }
   .best-product__flag {
-    margin-left: -130px;
+    margin-left: -154px;
     order: -1;
+  }
+  .best-product__descript-items {
+    margin-top: 29px;
+  }
+  .best-product__price {
+    margin: 82px auto 34px auto;
   }
 }

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка заказ</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -41,55 +42,61 @@
       <h1 class="form__title">Вязание на заказ</h1>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p class="form__descript">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <fieldset class="form__area">
-          <legend class="form__header-area">Тип</legend>
-          <div class="form__items-container">
+        <div class="form__area  form__area--radio">
+          <h2 class="form__header-area">Тип</h2>
+          <div class="form__items-container  form__items-container--radio">
             <input type="radio" name="type-product" id="interior_piece" checked>
-            <label for="interior_piece" class="form__select-label">Аксессуар для интерьера</label>
+            <label for="interior_piece" class="form__select-label  form__select-label--radio">Аксессуар для интерьера</label>
             <input type="radio" name="type-product" id="toy">
-            <label for="toy" class="form__select-label">Детская игрушка</label>
+            <label for="toy" class="form__select-label  form__select-label--radio">Детская игрушка</label>
           </div>
-        </fieldset>
-        <fieldset class="form__area">
-          <legend class="form__header-area">Цвет</legend>
+        </div>
+        <div class="form__area  form__area--checkbox">
+          <h2 class="form__header-area">Цвет</h2>
           <div class="form__items-container  form__items-container--checkbox">
             <input type="checkbox" name="white" id="white" checked>
-            <label for="white" class="form__select-label">Белый</label>
+            <label for="white" class="form__select-label  form__select-label--checkbox">Белый</label>
             <input type="checkbox" name="gray" id="gray" checked>
-            <label for="gray" class="form__select-label">Серый</label>
+            <label for="gray" class="form__select-label  form__select-label--checkbox">Серый</label>
             <input type="checkbox" name="tiffany" id="tiffany">
-            <label for="tiffany" class="form__select-label">"Тиффани"</label>
+            <label for="tiffany" class="form__select-label  form__select-label--checkbox">&laquo;Тиффани&raquo;</label>
             <input type="checkbox" name="black" id="black">
-            <label for="black" class="form__select-label">Черный</label>
+            <label for="black" class="form__select-label  form__select-label--checkbox">Черный</label>
             <input type="checkbox" name="pink" id="pink">
-            <label for="pink" class="form__select-label">Розовый</label>
+            <label for="pink" class="form__select-label  form__select-label--checkbox">Розовый</label>
             <input type="checkbox" name="orange" id="orange">
-            <label for="orange" class="form__select-label">Оранжевый</label>
+            <label for="orange" class="form__select-label  form__select-label--checkbox">Оранжевый</label>
           </div>
-        </fieldset>
-        <fieldset class="form__area">
-          <legend class="form__header-area">ФИО</legend>
+        </div>
+        <div class="form__area  form__area--user-name">
+          <h2 class="form__header-area">ФИО</h2>
           <div class="form__items-container  form__items-container--entry-field">
-            <label for="name">Имя:</label>
-            <input type="text" name="name" id="name" placeholder="Введите ваше имя*" class="form__buyer-data" required>
-            <label for="surname">Фамилия:</label>
-            <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" class="form__buyer-data" required>
-            <label for="patronymic">Отчество:</label>
-            <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете" class="form__buyer-data">
+            <div class="form__buyer-data-item">
+              <label for="name">Имя:</label>
+              <input type="text" name="name" id="name" placeholder="Введите ваше имя*" class="form__buyer-data" required>
+            </div>
+            <div class="form__buyer-data-item">
+              <label for="surname">Фамилия:</label>
+              <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" class="form__buyer-data" required>
+            </div>
+            <div class="form__buyer-data-item">
+              <label for="patronymic">Отчество:</label>
+              <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете" class="form__buyer-data">
+            </div>
           </div>
-        </fieldset>
-        <fieldset class="form__area">
-          <legend class="form__header-area">Тел</legend>
+        </div>
+        <div class="form__area  form__area--user-feedback">
+          <h2 class="form__header-area">Тел</h2>
           <input type="tel" name="tel" pattern="[+]{1}[7]{1} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 XXX XX XX*" class="form__buyer-data" required>
-        </fieldset>
-        <fieldset class="form__area">
-          <legend class="form__header-area">E-mail</legend>
+        </div>
+        <div class="form__area  form__area--user-feedback">
+          <h2 class="form__header-area  form__header-area--mail">E-mail</h2>
           <input type="email" name="email" placeholder="Ваш Email*" class="form__buyer-data" required>
-        </fieldset>
-        <fieldset class="form__area">
-          <legend class="form__header-area">Доп</legend>
+        </div>
+        <div class="form__area  form__area--message">
+          <h2 class="form__header-area">Доп</h2>
           <textarea name="additionally" placeholder="Опишите все ваши пожелания к заказу" class="form__buyer_message" rows="6"></textarea>
-        </fieldset>
+        </div>
         <div class="form__send-area">
           <span class="form__explanations">*Поля обязательны для заполнения</span>
           <button type="submit" class="submit-btn">Отправить заказ</button>

@@ -2,10 +2,18 @@
   width: 100%;
 }
 .modal-add__container {
-  display: flex;
-  margin: 0 auto;
-  padding: 0 30px;
+  /* для отображения - flex */
+  display: none;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  margin-left: -160px;
+  padding: 0 30px 46px 30px;
   width: 320px;
+  border-top: 1px solid @gray;
+  background-color: #fff;
+  box-shadow: 0 10px 9px -6px #c6c6c6;
+
   form {
     display: flex;
     flex-direction: column;
@@ -19,12 +27,13 @@
   }
 }
 .modal-add__title {
+  padding: 30px 0 10px 11px;
   .OpenSans-Bold;
   font-size: 25px;
   line-height: 30px;
   text-transform: uppercase;
+  max-width: 160px;
   margin: 0 auto;
-  max-width: 150px;
 }
 .modal-add__select-descript {
   .OpenSans;
@@ -34,6 +43,7 @@
   margin: 0 auto;
 }
 .modal-add__size-variation {
+  margin: 24px 0 31px 0;
   display: flex;
   justify-content: space-between;
   width: 260px;
@@ -54,20 +64,24 @@
 }
 @media @tablet {
   .modal-add__container {
-    padding: 0 105px;
+    margin-left: -283px;
+    padding: 0 105px 46px 105px;
     width: 566px;
     border: 1px solid @gray;
+    box-shadow: 0 4px 5px 2px #dddddb;
   }
   .modal-add__title {
-    max-width: 100%;
     margin: 0 auto;
     font-size: 30px;
     line-height: 57px;
+    padding: 33px 0 15px 0;
+    max-width: 100%;
   }
   .modal-add__select-descript {
     font-size: 17px;
   }
   .modal-add__size-variation {
+    margin: 20px 0 31px 0;
     width: 354px;
   }
   .modal-add__size {

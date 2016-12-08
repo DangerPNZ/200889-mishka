@@ -8,6 +8,7 @@
   width: 320px;
 }
 .catalog__title {
+  padding: 71px 0 76px 0;
   .OpenSans-Bold;
   font-size: 27px;
   line-height: 30px;
@@ -25,14 +26,25 @@
   display: flex;
   flex-direction: column;
   width: 260px;
+  padding: 30px 0 0 0;
   img {
+    width: 260px;
+    height: 195px;
   }
 }
 .catalog__product-descript {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: -3px;
   padding: 0 28px;
-  border-bottom: 1px solid @lightgray;
+  border: 1px solid @lightgray;
+}
+.catalog__descript-items {
+  margin-bottom: 19px;
 }
 .catalog__product-title {
+  padding: 27px 0 4px 0;
   .OpenSans-Bold;
   font-size: 17px;
   line-height: 24px;
@@ -47,13 +59,15 @@
   color: @graphite;
 }
 .catalog__product-purchase {
-  width: 203px;
+  margin-top: auto;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid @lightgray;
 }
 .catalog__product-price {
+  padding: 20px 0 28px 0;
   .OpenSans-Bold;
   font-size: 15px;
   line-height: 24px;
@@ -63,31 +77,44 @@
     width: 768px;
   }
   .catalog__title {
+    padding: 95px 0 78px 8px;
     font-size: 43px;
     line-height: 50px;
   }
   .catalog__products {
-    width: 668px;
+    padding-top: 30px;
   }
   .catalog__product {
+    width: 668px;
     flex-direction: row;
+    padding: 51px 0 0 0;
     img {
+      width: 334px;
+      height: 334px;
       order: -1;
     }
   }
   .catalog__product-descript {
+    margin: 0;
+    height: 100%;
     width: 334px;
     padding-left: 27px;
   }
+  .catalog__descript-items {
+    height: 240px;
+  }
   .catalog__product-title {
+    padding: 25px 0 4px 0;
     max-width: 238px;
     font-size: 20px;
     line-height: 24px;
   }
   .catalog__product-parameter {
+    padding-bottom: 176px;
     font-size: 15px;
   }
   .catalog__product-price {
+    padding: 23px 0 25px 4px;
     font-size: 17px;
   }
 }
@@ -98,15 +125,32 @@
   .catalog__title {
     font-size: 53px;
     line-height: 57px;
+    padding: 94px 0 100px 0;
   }
   .catalog__products {
+    padding: 80px 0 0 0;
     width: 1050px;
     flex-direction: row;
     justify-content: space-between;
   }
   .catalog__product {
-    width: 315px;
+    width: 316px;
     flex-direction: column;
+    img {
+      width: 316px;
+      height: 462px;
+      order: -1;
+    }
   }
-
+  .catalog__product-descript {
+    margin-top: -3px;
+    width: 316px;
+    padding-left: 27px;
+  }
+  .catalog__descript-items {
+    height: 103px;
+  }
+  .catalog__product-price {
+    padding: 23px 0 25px 0;
+  }
 }
