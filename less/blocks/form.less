@@ -1,59 +1,58 @@
 .form {
   width: 100%;
 }
-.form__container {
+.form__title {
+  width: 100%;
+  margin: 0 auto;
+  background-color: @bg-gray;
+  h1 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px 0 76px 0;
+    .OpenSans-Bold;
+    font-size: 27px;
+    line-height: 30px;
+    color: @black-brown;
+  }
+}
+.form__descript {
+  width: 100%;
+}
+.form__descript-container {
+  width: 260px;
+  margin: 0 auto;
+  p {
+    margin: 21px 0 26px 0;
+    .OpenSans;
+    font-size: 13px;
+    line-height: 24px;
+    color: @graphite;
+  }
+}
+.form__area {
+  width: 100%;
+}
+.form__area-container {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 260px;
   margin: 0 auto;
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 9px 30px 55px 30px;
-  }
   input[type="radio"] {
     display: none;
   }
   input[type="checkbox"] {
     display: none;
   }
-  .submit-btn {
-    background-color: inherit;
-    color: @graphite;
-    border: 2px solid @graphite;
-  }
-}
-.form__title {
-  width: 100%;
-  text-align: center;
-  padding: 70px 0 77px 0;
-  background-color: @bg-gray;
-  .OpenSans-Bold;
-  font-size: 27px;
-  line-height: 30px;
-  color: @black-brown;
-}
-.form__descript {
-  margin-bottom: 24px;
-  .OpenSans;
-  font-size: 13px;
-  line-height: 24px;
-  color: @graphite;
-}
-.form__area {
-  display: flex;
-  flex-direction: column;
   label {
     .OpenSans-Bold;
     font-size: 17px;
     line-height: 18px;
   }
 }
-.form__area--user-feedback {
+.form__area-container--user-feedback {
   padding: 1px 0 32px 0;
   .form__header-area {
-    padding-bottom: 21px;
+    padding-bottom: 20px;
   }
 }
 .form__header-area {
@@ -64,28 +63,25 @@
   color: @aqua;
   text-transform: uppercase;
 }
-.form__area {
-  .form__header-area::before {
-    content: "";
-    position: absolute;
-    top: 7px;
-    right: 0px;
-    display: block;
-    width: 198px;
-    height: 1px;
-    background-color: @aqua;
-  }
-
-  .form__header-area--mail::before {
-    content: "";
-    position: absolute;
-    top: 7px;
-    right: 0px;
-    display: block;
-    width: 179px;
-    height: 1px;
-    background-color: @aqua;
-  }
+.form__header-area::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 0px;
+  display: block;
+  width: 198px;
+  height: 1px;
+  background-color: @aqua;
+}
+.form__header-area--mail::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 0px;
+  display: block;
+  width: 179px;
+  height: 1px;
+  background-color: @aqua;
 }
 .form__items-container {
   display: flex;
@@ -103,9 +99,9 @@
     margin: 21px 0 14px 0;
   }
 }
-  .form__select-label {
+.form__select-label {
     padding-left: 62px;
-  }
+}
 .form__select-label--radio {
   margin: 15px 0;
 }
@@ -137,8 +133,19 @@
   line-height: 18px;
 }
 .form__send-area {
+  width: 100%;
+}
+.form__send-area-container {
   display: flex;
   flex-direction: column;
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 0 56px 0;
+  .submit-btn {
+    background-color: inherit;
+    color: @graphite;
+    border: 2px solid @graphite;
+  }
 }
 .form__explanations {
   margin: 13px 0 31px 0;
@@ -148,28 +155,33 @@
   color: @graphite;
 }
 @media @tablet {
-  .form__container {
-    width: 768px;
-    form {
-      width: 100%;
-      padding: 0;
-    }
+  .form__area--background {
+    background-color: @bg-gray;
   }
   .form__title {
-    padding: 94px 0 81px 0;
-    font-size: 43px;
-    line-height: 50px;
-    color: #000;
+    h1 {
+      padding: 94px 0 81px 0;
+      font-size: 43px;
+      line-height: 50px;
+      color: #000;
+    }
   }
-
-  .form__descript {
-    margin: 73px 50px 0 50px;
-    font-size: 17px;
-    line-height: 30px;
+  .form__descript-container {
+    width: 668px;
+    margin: 0 auto;
+    p {
+      width: 620px;
+      margin: 73px 0 0 0;
+      font-size: 17px;
+      line-height: 30px;
+    }
   }
-  .form__area {
+  .form__area-container {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
+    width: 668px;
+    margin: 0 auto;
     label {
       font-size: 19px;
       line-height: 18px;
@@ -179,17 +191,8 @@
       display: none;
     }
   }
-  .form__area--radio {
-    .form__header-area {
-      padding: 75px 0 0 52px;
-    }
-  }
-  .form__area--checkbox {
-    background-color: @bg-gray;
-    padding-bottom: 25px;
-    .form__header-area {
-      padding: 68px 0 0 52px;
-    }
+  .form__area-container--checkbox {
+    padding: 0 0 25px 0;
   }
   .form__area--user-name {
     padding-bottom: 30px;
@@ -214,17 +217,19 @@
   }
   .form__items-container--checkbox {
     margin: 16px 0 0 122px;
+    width: 501px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
   .form__select-label--checkbox {
-    width: 262px;
+    width: 239px;
     display: flex;
     margin: 29px 0 29px 0;
   }
   .form__items-container--entry-field {
-    margin: 45px 0 0 124px;
+    margin: 45px 0 31px 124px;
     flex-direction: row;
     flex-wrap: wrap;
     label {
@@ -241,41 +246,39 @@
       width: 428px;
     }
   }
-  .form__area--user-feedback {
-    .form__header-area {
-      padding: 0 0 0 52px;
-      width: 218px;
-    }
+  .form__area-container--user-feedback {
+    justify-content: space-between;
+    align-items: baseline;
     .form__buyer-data {
       width: 501px;
       font-size: 19px;
       padding: 0 0 14px 16px;
       background-color: transparent;
     }
-    align-items: baseline;
-    background-color: @bg-gray;
     input[type="tel"] {
-      margin: 65px 0 0 0;
+      margin: 64px 0 0 0;
     }
     input[type="email"] {
-      margin: 6px 0 18px 0;
+      margin: 4px 0 18px 0;
     }
   }
-.form__area--message {
+.form__area-container--message {
   justify-content: space-between;
   align-items: baseline;
-  padding: 25px 50px 0 50px;
+  padding-top: 25px;
+  width: 668px;
 }
 .form__buyer_message {
   font-size: 19px;
   width: 501px;
   padding-bottom: 15px;
 }
-  .form__send-area {
+  .form__send-area-container {
+    width: 668px;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    padding: 48px 50px 30px 50px;
+    padding: 48px 0 30px 0;
     .submit-btn {
       width: 230px;
     }
@@ -287,19 +290,24 @@
   }
 }
 @media @desktop {
-  .form__container {
+  .form__area-container {
     width: 1150px;
   }
   .form__title {
-    font-size: 53px;
-    line-height: 57px;
-    padding: 94px 0 101px 0;
+    h1 {
+      font-size: 53px;
+      line-height: 57px;
+      padding: 94px 0 101px 0;
+    }
   }
-  .form__descript {
-    margin: 123px auto 0 auto;
+  .form__descript-container {
     width: 700px;
+    margin: 123px auto 0 auto;
+    p {
+      width: 680px;
+    }
   }
-  .form__area--radio {
+  .form__area-container--radio {
     .form__header-area {
       padding: 75px 0 0 113px;
     }
@@ -308,17 +316,19 @@
     margin: 23px 0 18px 0;
     padding-left: 75px;
   }
-  .form__area--checkbox {
+  .form__area-container--checkbox {
     .form__header-area {
-      padding: 67px 0 0 110px;
+      padding-left: 110px;
     }
   }
   .form__items-container--checkbox {
-    margin: 16px 0 0 71px;
+    margin: 15px 0 0 71px;
+    width: 767px;
   }
-  .form__area--user-name {
+  .form__area-container--user-name {
+    padding-bottom: 31px;
     .form__header-area {
-      padding: 67px 0 0 110px;
+      padding: 0 0 0 110px;
     }
   }
   .form__items-container--entry-field {
@@ -332,24 +342,30 @@
       width: 626px;
     }
   }
-  .form__area--user-feedback {
+  .form__area-container--user-feedback {
+    width: 925px;
+    justify-content: flex-start;
     .form__header-area {
-      padding: 0 0 0 110px;
-      width: 223px;
+      padding: 0 0 0 0px;
+      width: 115px;
     }
     .form__buyer-data {
       width: 700px;
     }
+    input[type="email"] {
+      margin: 6px 0 18px 0;
+    }
   }
-  .form__area--message {
+  .form__area-container--message {
     padding: 25px 225px 0 112px;
   }
   .form__buyer_message {
     width: 700px;
     padding-bottom: 15px;
   }
-  .form__send-area {
+  .form__send-area-container {
+    width: 700px;
     align-items: baseline;
-    padding: 44px 225px 30px 225px;
+    padding: 44px 0 30px 0;
   }
 }
