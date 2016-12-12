@@ -3,7 +3,6 @@
 }
 .form__title {
   width: 100%;
-  margin: 0 auto;
   background-color: @bg-gray;
   h1 {
     margin: 0 auto;
@@ -22,7 +21,7 @@
   width: 260px;
   margin: 0 auto;
   p {
-    margin: 21px 0 26px 0;
+    padding: 9px 0 12px 0;
     .OpenSans;
     font-size: 13px;
     line-height: 24px;
@@ -94,19 +93,16 @@
   padding: 20px 0 15px 0;
 }
 .form__items-container--entry-field {
-  margin: 9px 0 32px 0;
+  padding: 9px 0 32px 0;
   label {
-    margin: 21px 0 14px 0;
+    padding: 21px 0 14px 0;
   }
 }
-.form__select-label {
-    padding-left: 62px;
-}
 .form__select-label--radio {
-  margin: 15px 0;
+  padding: 15px 0 15px 62px;
 }
 .form__select-label--checkbox {
-  margin: 17px 0 26px 0;
+  padding: 17px 0 26px 62px;
 }
 .form__buyer-data-item {
   display: flex;
@@ -148,7 +144,7 @@
   }
 }
 .form__explanations {
-  margin: 13px 0 31px 0;
+  padding: 14px 0 30px 0;
   .OpenSans;
   font-size: 14px;
   line-height: 16px;
@@ -160,7 +156,7 @@
   }
   .form__title {
     h1 {
-      padding: 94px 0 81px 0;
+      padding: 94px 0 80px 0;
       font-size: 43px;
       line-height: 50px;
       color: #000;
@@ -171,7 +167,7 @@
     margin: 0 auto;
     p {
       width: 620px;
-      margin: 73px 0 0 0;
+      padding: 57px 0 0 0;
       font-size: 17px;
       line-height: 30px;
     }
@@ -206,34 +202,31 @@
     padding-bottom: 19px;
   }
   .form__items-container--radio {
-    margin: 23px 0 18px 0;
+    padding: 27px 0 39px 0;
     padding-left: 130px;
   }
-  .form__select-label {
-    padding-left: 80px;
-  }
   .form__select-label--radio {
-    margin: 29px 0;
+    padding: 29px 0 29px 80px;
   }
   .form__items-container--checkbox {
-    margin: 16px 0 0 122px;
-    width: 501px;
+    padding: 37px 0 14px 122px;
+    width: 551px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
   }
   .form__select-label--checkbox {
-    width: 239px;
+    width: 165px;
     display: flex;
-    margin: 29px 0 29px 0;
+    padding: 29px 0 29px 80px;
   }
   .form__items-container--entry-field {
-    margin: 45px 0 31px 124px;
+    padding: 45px 0 31px 124px;
     flex-direction: row;
     flex-wrap: wrap;
     label {
-      margin-right: 25px;
+      padding-right: 25px;
     }
     .form__buyer-data {
       width: 375px;
@@ -278,7 +271,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    padding: 48px 0 30px 0;
+    padding: 47px 0 31px 0;
     .submit-btn {
       width: 230px;
     }
@@ -302,28 +295,34 @@
   }
   .form__descript-container {
     width: 700px;
-    margin: 123px auto 0 auto;
+    margin: 66px auto 0 auto;
     p {
       width: 680px;
     }
   }
   .form__area-container--radio {
+    width: 1050px;
     .form__header-area {
-      padding: 75px 0 0 113px;
+      padding: 0 0 0 65px;
     }
   }
   .form__items-container--radio {
-    margin: 23px 0 18px 0;
     padding-left: 75px;
   }
   .form__area-container--checkbox {
+    padding: 20px 0 40px 0;
     .form__header-area {
       padding-left: 110px;
     }
   }
   .form__items-container--checkbox {
-    margin: 15px 0 0 71px;
-    width: 767px;
+    justify-content: flex-start;
+    padding: 15px 0 0 71px;
+    width: 875px;
+  }
+  .form__select-label--checkbox {
+    width: 265px;
+    display: flex;
   }
   .form__area-container--user-name {
     padding-bottom: 31px;
@@ -332,7 +331,7 @@
     }
   }
   .form__items-container--entry-field {
-    margin: 44px 0 0 74px;
+    padding: 44px 0 0 74px;
     .form__buyer-data {
       width: 573px;
     }

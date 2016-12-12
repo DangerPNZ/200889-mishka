@@ -3,7 +3,7 @@
   background-color: @bg-gray;
 }
 .page-footer__container {
-  width: 320px;
+  width: 260px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,14 +20,18 @@
 .page-footer__social-link--facebook {}
 .page-footer__social-link--twitter {}
 .page-footer__designed-by {
+  width: 260px;
+  padding: 31px 0 31px 39px;
   .OpenSans-Bold;
   font-size: 19px;
   line-height: 18px;
   color: #000;
+  border-top: 1px solid #e5e5e5;
 }
 @media @tablet {
   .page-footer__container {
-    width: 768px;
+    padding: 60px 0 58px 0;
+    width: 668px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -36,10 +40,15 @@
       display: flex;
     }
   }
+  .page-footer__designed-by {
+    width: 183px;
+    padding: 0 56px 0 0;
+    border-top: none;
+  }
 }
 @media @desktop {
     .page-footer__container {
-      width: 1150px;
+      width: 1050px;
       flex-direction: row;
       justify-content: space-between;
     }

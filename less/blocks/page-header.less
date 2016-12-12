@@ -1,19 +1,46 @@
 .page-header {
   width: 100%;
+  border-bottom: 1px solid @lightgray;
 }
 .page-header__container {
   margin: 0 auto;
   width: 320px;
 }
+.page-header__main {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  padding: 30px 0;
+}
 .page-header__logo {}
 .page-header__logo-link {
   img {}
 }
-.page-header__menu-btn {}
+.page-header__menu-btn {
+  margin-left: 65px;
+  width: 20px;
+  height: 20px;
+  background-color: #f72020;
+}
 .page-header__main-menu {
-  ul {
-     a {
-    }
+  /* скрыл меню */
+  display: none;
+  position: absolute;
+  top: 86px;
+  right: 0;
+  width: 320px;
+  background-color: #fff;
+}
+.page-header__menu-item {
+  width: 320px;
+  padding: 20px 0 20px 75px;
+  .OpenSans-Bold;
+  font-size: 17px;
+  line-height: 24px;
+  border-bottom: 1px solid @lightgray;
+  a {
+    color: #000;
   }
 }
 .page-header__delivery {
