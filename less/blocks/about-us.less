@@ -2,13 +2,96 @@
   width: 100%;
 }
 .about-us__container {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin: 0 auto;
+  padding: 0 30px 30px 30px;
 }
-.about-us__title {}
-.about-us__item {}
-.about-us__item--materials {}
-.about-us__item--style {}
-.about-us__item--like {}
-.about-us__item--handmade {}
+.about-us__title {
+  width: 100%;
+  margin: 34px 0 1px 0;
+  .OpenSans-Bold;
+  font-size: 25px;
+  line-height: 30px;
+}
+.about-us__items {
+  display: flex;
+  flex-direction: column;
+}
+.about-us__item {
+  display: flex;
+  .OpenSans-Bold;
+  font-size: 17px;
+  padding-top: 85px;
+}
+.about-us__item--materials {
+  max-width: 175px;
+}
+.about-us__item--style {
+  max-width: 205px;
+}
+.about-us__item--like {
+  max-width: 185px;
+}
+.about-us__item--handmade {
+  max-width: 225px;
+}
 .about-us__item--patriotism {}
-.about-us__item--package {}
+.about-us__item--package {
+  max-width: 200px;
+}
+@media @tablet {
+  .about-us__container {
+    width: 768px;
+    padding: 34px 50px 30px 50px;
+  }
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 84px 0 10px -3px;
+  }
+  .about-us__items {
+    height: 500px;
+    flex-wrap: wrap;
+    li {
+      width: 334px;
+    }
+  }
+  .about-us__item {
+    display: flex;
+    width: 334px;
+    font-size: 20px;
+    padding: 92px 0 17px 0;
+  }
+  .about-us__item--materials {
+    max-width: 225px;
+  }
+  .about-us__item--style {
+    max-width: 245px;
+  }
+  .about-us__item--like {
+    max-width: 225px;
+  }
+  .about-us__item--handmade {
+    max-width: 260px;
+  }
+  .about-us__item--patriotism {}
+  .about-us__item--package {
+    max-width: 240px;
+  }
+}
+@media @desktop {
+  .about-us__container {
+    width: 1150px;
+    padding: 73px 225px 35px 225px;
+  }
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .about-us__item {
+    width: 350px;
+  }
+}

@@ -2,13 +2,114 @@
   width: 100%;
 }
 .reviews__container {
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 0 auto;
+  padding: 0 30px 40px 30px;
+  .link-btn {
+    width: 100%;
+  }
 }
-.reviews__title {}
-.reviews__note {}
-.reviews__author {}
-.reviews__author-mail {}
-.reviews__leaf {}
-.reviews__leaf-arrow {}
-.reviews__leaf-arrow--back {}
+.reviews__title {
+  .OpenSans-Bold;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 27px 0 9px 0;
+}
+.reviews__note {
+  .OpenSans;
+  font-size: 15px;
+  line-height: 30px;
+  color: @graphite;
+}
+.reviews__author-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 11px;
+}
+.reviews__author {
+  .OpenSans-Bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+.reviews__author-mail {
+  .OpenSans;
+  font-size: 18px;
+  line-height: 30px;
+  color: @graphite;
+  margin-top: 3px;
+}
+.reviews__leaf {
+  display: flex;
+  width: 100%;
+  border: 1px solid @lightgray;
+  margin: 30px 0 35px 0;
+}
+.reviews__leaf-arrow {
+  width: 50%;
+  height: 52px;
+}
+.reviews__leaf-arrow--back {
+  border-right: 1px solid @lightgray;
+}
 .reviews__leaf-arrow--next {}
+
+@media @tablet {
+  .reviews__container {
+    width: 768px;
+    padding: 0 50px 44px 50px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    .link-btn {
+      margin-top: 50px;
+      order: -1;
+      width: 175px;
+    }
+  }
+  .reviews__title {
+    margin: 76px 0 32px -4px;
+    font-size: 43px;
+    line-height: 50px;
+    order: -2;
+  }
+  .reviews__note {
+    font-size: 17px;
+  }
+  .reviews__author-info {
+    margin-top: 11px;
+  }
+  .reviews__author {
+    font-size: 17px;
+  }
+  .reviews__author-mail {
+    font-size: 17px;
+  }
+  .reviews__leaf {
+    margin-top: 40px;
+    width: 174px;
+  }
+}
+@media @desktop {
+  .reviews__container {
+    width: 1150px;
+    padding: 0 50px 35px 225px;
+    background-position: 50px 0;
+  }
+  .reviews__title {
+    margin: 71px 0 32px -4px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .reviews__note {
+    max-width: 770px;
+  }
+  .reviews__author-info {
+    margin-top: 0;
+  }
+  .reviews__leaf {
+    margin-top: 12px;
+  }
+}
