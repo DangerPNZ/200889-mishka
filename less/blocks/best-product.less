@@ -54,13 +54,12 @@
   width: 97px;
   padding: 9px 0 10px 0;
 }
-.best-product__descript-parameter {}
 .best-product__price {
   .OpenSans-Bold;
   font-size: 17px;
   line-height: 24px;
   color: @graphite;
-  margin: 25px auto 25px auto;
+  margin: 22px auto 25px auto;
 }
 
 @media @tablet {
@@ -72,8 +71,7 @@
       position: absolute;
       top: 153px;
       right: 50px;
-      width: 333px;
-      height: 404px;
+      z-index: -10;
     }
   }
   .best-product__header {
@@ -109,12 +107,21 @@
   }
   .link-btn {
     width: 100%;
+    &::before {
+      content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA2MCI+PHBhdGggZmlsbD0iIzJFMzY4RiIgZD0iTTMwLjIgNWgtLjJsLTE5LjcgMi4xdjM2LjJsMTkuNyAxMS43IDE5LjctMTEuN3YtMzYuMmwtMTkuNS0yLjF6bTE3IDM2LjhsLTE3LjIgMTAuMi0xNy4yLTEwLjJ2LTE0LjhsMTcuMSAxMC4ydjEuOGwtMTEuNy03djEuOGwxMS44IDcuMXYxLjlsLTExLjgtN3YxLjhsMTEuOCA3IDExLjktNy4xdi03LjZsNS4zLTMuMnYxNS4xem0tLjEtMTdsLTQuNyAyLjgtMi4yIDEuMy0xMC4zLTYuMXYxLjhsOC44IDUuM2gtLjFsLS4yLjEtMS4zLjctNy4zLTQuM3YxLjhsNS44IDMuNC0xLjQuOS00LjMtMi42djEuOGwyLjkgMS43LTIuOSAxLjctMTctMTAuMSAxNy0xMC4yIDE3LjIgMTB6bS4xLTEuOGwtMTcuMy0xMC4yLTE3LjEgMTAuMnYtMTMuNmwxNy4yLTEuOCAxNy4yIDEuOHYxMy42eiIvPjwvc3ZnPg==);
+      display: block;
+      height: 30px;
+      width: 30px;
+    }
   }
 }
 @media @desktop {
   .best-product__container {
     width: 1150px;
     padding: 0 50px 0 225px;
+    img {
+      top: 73px;
+    }
   }
   .best-product__header {
     margin: 98px 0 17px -4px;

@@ -11,35 +11,80 @@
   justify-content: flex-end;
   align-items: center;
   position: relative;
-  padding: 30px 0;
+  min-height: 79px;
+  padding-right: 31px;
 }
 .page-header__logo {}
 .page-header__logo-link {
   img {}
 }
 .page-header__menu-btn {
+  position: relative;
   margin-left: 65px;
   width: 20px;
-  height: 20px;
-  background-color: #f72020;
+  height: 21px;
+}
+.page-header__menu-btn--close {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: -3px;
+    width: 27px;
+    height: 2.3px;
+    background-color: @header-btn;
+    transform: rotate(45deg);
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 9px;
+    right: -4px;
+    width: 27px;
+    height: 2.3px;
+    background-color: @header-btn;
+    transform: rotate(-45deg);
+  }
+}
+.page-header__menu-btn--open {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    width: 20px;
+    height: 2px;
+    background-color: @header-btn;
+    box-shadow: 0 6px 0 0 @header-btn,
+    0 12px 0 0 @header-btn;
+  }
 }
 .page-header__main-menu {
   /* скрыть меню */
-  display: flex;
+  display: none;
   position: absolute;
-  top: 86px;
-  right: 0;
+  top: 80px;
+  left: 50%;
+  margin-left: -160px;
+  margin-bottom: auto;
   width: 320px;
   background-color: #fff;
+  z-index: 10;
 }
 .page-header__menu-item {
+  display: flex;
   width: 320px;
-  padding: 20px 0 20px 75px;
   .OpenSans-Bold;
   font-size: 17px;
   line-height: 24px;
   border-bottom: 1px solid @lightgray;
   a {
+    width: 320px;
+    padding: 26px 0 0 75px;
+    min-height: 78px;
     color: #000;
   }
 }
