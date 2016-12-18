@@ -14,7 +14,13 @@
   min-height: 79px;
   padding-right: 31px;
 }
-.page-header__logo {}
+.page-header__logo {
+}
+#logo-desktop {
+  display: none;
+  width: 0;
+  height: 0;
+}
 .page-header__logo-link {
   img {}
 }
@@ -23,9 +29,7 @@
   margin-left: 65px;
   width: 20px;
   height: 21px;
-}
-.page-header__menu-btn--close {
-  &::before {
+  &--close::before {
     content: "";
     display: block;
     position: absolute;
@@ -36,7 +40,7 @@
     background-color: @header-btn;
     transform: rotate(45deg);
   }
-  &::after {
+  &--close::after {
     content: "";
     display: block;
     position: absolute;
@@ -47,9 +51,7 @@
     background-color: @header-btn;
     transform: rotate(-45deg);
   }
-}
-.page-header__menu-btn--open {
-  &::before {
+  &--open::before {
     content: "";
     display: block;
     position: absolute;
@@ -64,7 +66,7 @@
 }
 .page-header__main-menu {
   /* скрыть меню */
-  display: none;
+  display: flex;
   position: absolute;
   top: 80px;
   left: 50%;

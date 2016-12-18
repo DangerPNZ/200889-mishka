@@ -2,7 +2,7 @@
   width: 100%;
 }
 .modal-add__container {
-  /* для отображения - flex */
+  /* по умолчанию скрыто */
   display: none;
   position: fixed;
   top: 100px;
@@ -13,7 +13,7 @@
   border-top: 1px solid @gray;
   background-color: #fff;
   box-shadow: 0 10px 9px -6px #c6c6c6;
-
+  z-index: 500;
   form {
     display: flex;
     flex-direction: column;
@@ -59,7 +59,13 @@
   outline: none;
   border: 2px solid @lightgray;
   &:focus {
-    border: 2px solid @aqua;
+    border-color: @aqua;
+  }
+  &:focus:hover {
+    border-color: @aqua;
+  }
+  &:hover {
+    border-color: @gray;
   }
 }
 @media @tablet {

@@ -10,47 +10,80 @@
   margin: 0 auto;
 }
 .page-footer__logo {
-  .page-footer__logo-link {
-    display: none;
-  }
+  display: none;
 }
-.page-footer__social {}
+.page-footer__social {
+  padding: 14px 0;
+}
 .page-footer__social-link {
-  &--instagram {
-  }
-  &--facebook {
 
-  }
-  &--twitter {
-
+  svg {
+    fill: #221f1f;
+    margin: 10px 18px;
+    &:hover {
+      fill: #46c1ae;
+    }
+    &:active {
+      fill: #bde3dd;
+    }
   }
 }
-
 .page-footer__designed-by {
+  position: relative;
   width: 260px;
-  padding: 31px 0 31px 39px;
+  padding: 27px 0 34px 39px;
   .OpenSans-Bold;
   font-size: 19px;
   line-height: 18px;
   color: #000;
   border-top: 1px solid #e5e5e5;
+  &:active {
+    color: #a8a8a8;
+  }
+  svg {
+    position: absolute;
+    top: 22px;
+    right: 39px;
+    fill: @aqua;
+  }
+  &:hover svg {
+    fill: #46c1ae;
+  }
+  &:active svg {
+    fill: #bde3dd;
+  }
 }
 @media @tablet {
   .page-footer__container {
-    padding: 60px 0 58px 0;
+    padding: 33px 0 30px 0;
     width: 668px;
     flex-direction: row;
     justify-content: space-between;
   }
   .page-footer__logo {
-    .page-footer__logo-link {
-      display: flex;
+    display: block;
+    width: 180px;
+  }
+  .page-footer__logo-link {
+    svg {
+      fill: #231f20;
+      margin-bottom: 5px;
+    }
+    &:hover svg {
+      fill: #46c1ae;
+    }
+    &:active svg {
+      fill: #bde3dd;
     }
   }
   .page-footer__designed-by {
     width: 183px;
     padding: 0 56px 0 0;
     border-top: none;
+    svg {
+      top:-6px;
+      right: 0px;
+    }
   }
 }
 @media @desktop {
