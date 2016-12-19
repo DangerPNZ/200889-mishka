@@ -22,15 +22,17 @@
 .catalog__products {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  width: 100%;
+  align-items: center;
 }
 .catalog__product {
   display: flex;
   flex-direction: column;
   width: 260px;
   padding: 30px 0 0 0;
-  img {
-    margin-bottom: -3px;
+  .catalog__product-container {
+    font-size: 0;
+    line-height: 0;
   }
 }
 .catalog__product-descript {
@@ -60,7 +62,6 @@
   color: @graphite;
 }
 .catalog__product-purchase {
-  margin-top: auto;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -94,7 +95,6 @@
     }
   }
   .catalog__product-descript {
-
     width: 334px;
     padding-left: 27px;
   }
@@ -124,19 +124,19 @@
   .catalog__products {
     padding: 80px 0 0 0;
     width: 1050px;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
   }
   .catalog__product {
     width: 316px;
     flex-direction: column;
     img {
       order: -1;
-      margin-bottom: 0;
     }
   }
   .catalog__product-descript {
-    margin-top: -3px;
     width: 316px;
     padding-left: 27px;
   }

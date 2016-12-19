@@ -14,15 +14,21 @@
   min-height: 79px;
   padding-right: 31px;
 }
-.page-header__logo {
+.page-header__logo-link[href] {
+  &:hover {
+    fill: #666;
+  }
+  &:active {
+    fill: #b2b2b2;
+  }
 }
-#logo-desktop {
+.page-header__logo-tablet {
   display: none;
-  width: 0;
-  height: 0;
+}
+.page-header__logo-desktop {
+  display: none;
 }
 .page-header__logo-link {
-  img {}
 }
 .page-header__menu-btn {
   position: relative;
@@ -78,28 +84,197 @@
 }
 .page-header__menu-item {
   display: flex;
+  position: relative;
   width: 320px;
   .OpenSans-Bold;
   font-size: 17px;
   line-height: 24px;
   border-bottom: 1px solid @lightgray;
-  a {
-    width: 320px;
-    padding: 26px 0 0 75px;
-    min-height: 78px;
-    color: #000;
+  &--delivery {
+    display: none;
+  }
+  &--new {
+    display: none;
+  }
+  &--sale {
+    display: none;
   }
 }
-.page-header__delivery {
-  display: none;
+  /* ссылка */
+.page-header__nav-link {
+  width: 320px;
+  padding: 26px 0 0 75px;
+  min-height: 78px;
+  color: #000;
+  &:hover {
+    color: #666;
+  }
+  &:active {
+    color: #b2b2b2;
+  }
+  svg {
+    position: absolute;
+    fill: #d3d2d2;
+    top: 30px;
+    left: 31px;
+  }
+  &:hover svg {
+    fill: #63d1bb;
+  }
+    &:active svg {
+    fill: #d0f1ea;
+  }
 }
 @media @tablet {
   .page-header__container {
-    width: 768px;
+    position: relative;
+    width: 668px;
+  }
+  .page-header__main {
+    justify-content: flex-start;
+    align-items: center;
+    position: static;
+    min-height: 88px;
+    padding-right: 0;
+  }
+  .page-header__logo-link {
+    z-index: 50;
+  }
+  .page-header__logo-tablet {
+    display: block;
+  }
+  .page-header__logo-mobile {
+    display: none;
+  }
+  .page-header__menu-btn {
+    display: none;
+    }
+  .page-header__main-menu {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+      top: -80px;
+      left: 50%;
+      margin-left: -335px;
+      width: 668px;
+      background-color: transparent;
+    }
+  }
+  .page-header__menu-item {
+    width: auto;
+    border-bottom: none;
+    &--search {
+      order: 1;
+      font-size: 0;
+      margin-left: 320px;
+      min-width: 83px;
+      border-left: 1px solid @lightgray;
+      border-right: 1px solid @lightgray;
+      min-height: 88px;
+    }
+    &--basket {
+      order: 2;
+      width: 264px;
+      padding-left: 82px;
+      min-height: 88px;
+      padding-top: 31px;
+    }
+    &--catalog {
+      order: 3;
+      width: 168px;
+      font-size: 15px;
+      padding-top: 17px;
+    }
+    &--form {
+      order: 4;
+      width: 168px;
+      font-size: 15px;
+      padding-top: 17px;
+    }
+    &--delivery {
+      order: 5;
+      display: flex;
+      margin-left: auto;
+      .OpenSans;
+      font-size: 15px;
+      line-height: 24px;
+      color: @graphite;
+      padding-top: 17px;
+    }
+  }
+  .page-header__nav-link {
+    width: auto;
+    padding: 0 0 0 0;
+    min-height: auto;
+    svg {
+      top: 35px;
+      left: 33px;
+    }
   }
 }
+
 @media @desktop {
   .page-header__container {
-    width: 1150px;
+    width: 1050px;
+  }
+  .page-header__main {
+    justify-content: center;
+    min-height: 88px;
+  }
+  .page-header__logo-tablet {
+    display: none;
+  }
+  .page-header__logo-desktop {
+    display: block;
+  }
+  .page-header__main-menu {
+    ul {
+      margin-left: -525px;
+      width: 1050px;
+    }
+  }
+  .page-header__menu-item {
+    &--search {
+      order: 3;
+      svg {
+        top: 35px;
+        left: 30px;
+      }
+    }
+    &--basket {
+      order: 4;
+    }
+    &--catalog {
+      order: 1;
+      width: 184px;
+      font-size: 17px;
+      padding-top: 31px;
+      border-right: 1px solid @lightgray;
+    }
+    &--form {
+      order: 2;
+      width: 197px;
+      font-size: 17px;
+      padding-top: 31px;
+      padding-left: 35px;
+    }
+    &--delivery {
+      order: 7;
+    }
+    &--new {
+      display: flex;
+      order: 5;
+      width: 220px;
+      font-size: 15px;
+      padding-top: 17px;
+    }
+    &--sale {
+      display: flex;
+      order: 6;
+      width: 220px;
+      font-size: 15px;
+      padding-top: 17px;
+    }
   }
 }
