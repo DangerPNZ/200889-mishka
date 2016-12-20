@@ -16,6 +16,7 @@
           <svg width="90" height="35" class="page-header__logo-mobile"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-mobile"></use></svg>
           <svg width="113" height="46" class="page-header__logo-tablet"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-tablet"></use></svg>
           <svg width="148" height="73" class="page-header__logo-desktop"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-desktop"></use></svg>
+          <span class="reader-descript">На главную</span>
         </a>
         <a href="#" class="page-header__menu-btn  page-header__menu-btn--close"></a>
       </div>
@@ -69,7 +70,7 @@
             </div>
             <div class="catalog__product-purchase">
               <span class="catalog__product-price">1 200 руб.</span>
-              <a href="#" class="catalog__add-link"><span class="reader-descript">Добавить в корзину</span></a>
+              <a href="#" class="catalog__add-link"><svg width="20" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg><span class="reader-descript">Добавить в корзину</span></a>
             </div>
           </div>
         </article>
@@ -90,7 +91,7 @@
             </div>
             <div class="catalog__product-purchase">
               <span class="catalog__product-price">690 руб.</span>
-              <a href="#" class="catalog__add-link"><span class="reader-descript">Добавить в корзину</span></a>
+              <a href="#" class="catalog__add-link"><svg width="20" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg><span class="reader-descript">Добавить в корзину</span></a>
             </div>
           </div>
         </article>
@@ -111,7 +112,7 @@
             </div>
             <div class="catalog__product-purchase">
               <span class="catalog__product-price">1 500 руб.</span>
-              <a href="#" class="catalog__add-link"><span class="reader-descript">Добавить в корзину</span></a>
+              <a href="#" class="catalog__add-link"><svg width="20" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg><span class="reader-descript">Добавить в корзину</span></a>
             </div>
           </div>
         </article>
@@ -127,11 +128,13 @@
           <source src=".webm" type="video/webm">
         </video>
       -->
-        <picture>
-          <source media="(min-width: 1150px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x">
-          <img src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x" alt="Процесс производства нашей продукции">
-        </picture>
+        <div class="manufacturing-process__img-container">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x">
+            <img src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x" alt="Процесс производства нашей продукции">
+          </picture>
+        </div>
         <p class="manufacturing-process__descript">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a href="#" class="link-btn">Сделать заказ</a>
       </div>
