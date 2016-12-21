@@ -15,7 +15,9 @@
     max-width: 255px;
     margin: 24px 0 18px 0;
   }
-  img {}
+  img {
+    background-color: @bg-img;
+  }
 }
 .best-product__header {
   display: flex;
@@ -59,7 +61,8 @@
   font-size: 17px;
   line-height: 24px;
   color: @graphite;
-  margin: 22px auto 25px auto;
+  margin: 22px 0 25px 0;
+  text-align: center;
 }
 
 @media @tablet {
@@ -75,7 +78,7 @@
     }
   }
   .best-product__header {
-    margin: 19px 0 17px 0;
+    margin: 20px 0 17px -3px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -103,7 +106,7 @@
   }
   .best-product__price {
     font-size: 20px;
-    margin: 28px auto 34px auto;
+    margin: 28px 0 34px 0;
   }
   .link-btn {
     width: 100%;
@@ -134,7 +137,11 @@
   .best-product__descript-items {
     margin-top: 29px;
   }
+  .best-product__descript-value {
+    padding: 9px 0 11px 0;
+  }
   .best-product__price {
-    margin: 82px auto 34px auto;
+    margin: 80px 0 34px 0;
+    text-align: center;
   }
 }
