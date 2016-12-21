@@ -12,10 +12,34 @@
 .page-footer__logo {
   display: none;
 }
+.page-footer__logo-link {
+  svg {
+    width: 102px;
+    height: 34px;
+  }
+}
 .page-footer__social {
   padding: 14px 0;
 }
 .page-footer__social-link {
+  &--instagram {
+    svg {
+      width: 22px;
+      height: 24px;
+    }
+  }
+  &--facebook {
+    svg {
+      width: 15px;
+      height: 29px;
+    }
+  }
+  &--twitter {
+    svg {
+      width: 24px;
+      height: 26px;
+    }
+  }
   svg {
     fill: #221f1f;
     margin: 10px 18px;
@@ -43,6 +67,8 @@
     position: absolute;
     top: 22px;
     right: 39px;
+    width: 27px;
+    height: 34px;
     fill: @aqua;
   }
   &:hover svg {

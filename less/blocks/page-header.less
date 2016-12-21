@@ -22,13 +22,19 @@
     fill: #b2b2b2;
   }
 }
+.page-header__logo-mobile {
+  width: 90px;
+  height: 35px;
+}
 .page-header__logo-tablet {
   display: none;
+  width: 113px;
+  height: 46px;
 }
 .page-header__logo-desktop {
   display: none;
-}
-.page-header__logo-link {
+  width: 148px;
+  height: 73px;
 }
 .page-header__menu-btn {
   position: relative;
@@ -57,6 +63,28 @@
     background-color: @header-btn;
     transform: rotate(-45deg);
   }
+  &--nojs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: -3px;
+    width: 27px;
+    height: 2.3px;
+    background-color: @header-btn;
+    transform: rotate(45deg);
+  }
+  &--nojs::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 9px;
+    right: -4px;
+    width: 27px;
+    height: 2.3px;
+    background-color: @header-btn;
+    transform: rotate(-45deg);
+  }
   &--open::before {
     content: "";
     display: block;
@@ -71,8 +99,7 @@
   }
 }
 .page-header__main-menu {
-  /* скрыть меню */
-  display: flex;
+  display: none;
   position: absolute;
   top: 80px;
   left: 50%;
@@ -81,6 +108,12 @@
   width: 320px;
   background-color: #fff;
   z-index: 10;
+  &--nojs {
+    display: flex;
+  }
+  &--open {
+    display: flex;
+  }
 }
 .page-header__menu-item {
   display: flex;
@@ -90,6 +123,18 @@
   font-size: 17px;
   line-height: 24px;
   border-bottom: 1px solid @lightgray;
+  &--search {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &--basket {
+    svg {
+      width: 20px;
+      height: 19px;
+    }
+  }
   &--delivery {
     display: none;
   }
@@ -100,7 +145,6 @@
     display: none;
   }
 }
-  /* ссылка */
 .page-header__nav-link {
   width: 320px;
   padding: 26px 0 0 75px;
@@ -150,6 +194,7 @@
     display: none;
     }
   .page-header__main-menu {
+    display: flex;
     ul {
       display: flex;
       flex-wrap: wrap;
