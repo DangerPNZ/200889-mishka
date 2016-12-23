@@ -37,6 +37,12 @@
   img {
     background-color: @bg-img;
   }
+  &:hover .catalog__product-descript {
+    box-shadow: 0 7px 10px 0 #e9e9e9;
+  }
+  &:active .catalog__product-descript {
+      box-shadow: 0 3px 4px 0 #e9e9e9;
+  }
 }
 .catalog__product-descript {
   display: flex;
@@ -45,12 +51,6 @@
   padding: 0 28px;
   border: 1px solid @lightgray;
   flex-grow: 1;
-  &:hover {
-    box-shadow: 0 7px 10px 0 #e9e9e9;
-  }
-  &:active {
-      box-shadow: 0 3px 4px 0 #e9e9e9;
-  }
 }
 .catalog__descript-items {
   margin-bottom: 19px;
@@ -179,6 +179,7 @@
     width: 1050px;
     margin: 0 auto;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
   }
