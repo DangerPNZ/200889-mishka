@@ -71,14 +71,26 @@
 
 @media @tablet {
   .reviews__container {
+    position: relative;
     width: 768px;
     padding: 0 50px 44px 50px;
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/review@2x.jpg");
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 350px;
+      height: 457px;
+      background-color: @bg-gray;
+      z-index: -10;
+      background-image: url("../img/review@1x.jpg");
       background-repeat: no-repeat;
-      background-size: 350px auto;
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/review@2x.jpg");
+        background-repeat: no-repeat;
+        background-size: 350px auto;
+      }
     }
     .link-btn {
       margin-top: 50px;
@@ -121,6 +133,9 @@
     width: 1150px;
     padding: 0 50px 75px 225px;
     background-position: 50px 0;
+    &::before {
+      left: 50px;
+    }
   }
   .reviews__title {
     margin: 71px 0 32px -4px;
